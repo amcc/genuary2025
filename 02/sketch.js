@@ -10,7 +10,6 @@ function setup() {
   createCanvas(540, 540, WEBGL);
   angleMode(DEGREES)
   makeCubes()
-  blendMode(OVERLAY)
 }
 
 function draw() {
