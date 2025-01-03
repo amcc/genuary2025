@@ -2,3 +2,4 @@
 
 day 1: [https://editor.p5js.org/amcc/sketches/cM-vk0Zof](https://editor.p5js.org/amcc/sketches/cM-vk0Zof)
 day 2: [https://editor.p5js.org/amcc/sketches/4O00iqgOB](https://editor.p5js.org/amcc/sketches/4O00iqgOB)
+day 3: [https://editor.p5js.org/amcc/sketches/JSJVzDcgG](https://editor.p5js.org/amcc/sketches/JSJVzDcgG)
