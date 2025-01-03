@@ -1,0 +1,42 @@
+<html> <!-- we are aiming for 42 lines total, i could remove the html tags - it would work still, but seems excessive -->
+  <head>
+    <!-- the p5 min script is 1 line long (a very long line), so i'm adding this line here to account for it -->
+    <script src="p5.min.js"></script>
+    <script>
+      function setup() {
+        createCanvas(540, 540);
+        noStroke();
+      }
+      function draw() {
+        background(255, 50)
+        let colours = ["#53B3CB", "#F9C22E", "#F15946", "#E01A4F", "#0C090D"]; 
+        let grid = 10; 
+        let diameter = width/grid;
+        for(let y = 0; y < grid; y++){
+          for(let x = 0; x < grid; x++){
+            fill(random(colours))
+            if(random(100) > 99) {
+                polygon(x*width/grid + diameter/2, y*height/grid+diameter/2, random(width/(grid*2), width/grid), floor(random(3,6)))
+            }
+          } 
+        }
+        
+      }
+      function polygon(x, y, d, n) {
+        beginShape();
+        let aStart = random(TWO_PI);
+        for (let a = aStart; a < TWO_PI+aStart; a += TWO_PI / n) {
+          let sx = x + cos(a) * d / 2; let sy = y + sin(a) * d / 2; vertex(sx, sy);
+        }
+        endShape(CLOSE);
+      }
+    </script>
+    <style> 
+        body { 
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+        } 
+    </style>
+  </head>
+</html>
